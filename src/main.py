@@ -253,11 +253,11 @@ else:
 
 rf = dataset.copy()
 if (len(selected_symptoms) > 0):
-    for symton in selected_symptoms:
-        rf = rf[rf[symton]]
+    for symptom in selected_symptoms:
+        rf = rf[rf[symptom]]
     if len(rf) > 0:
-        symton_plot = figure_to_be_plotted(rf)
-        st.pyplot(symton_plot.figure)
+        symptom_plot = figure_to_be_plotted(rf)
+        st.pyplot(symptom_plot.figure)
     else:
         st.markdown('##### Nessun dato trovato')
 
